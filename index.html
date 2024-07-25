@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Index</title>
+    <script src="/inicial/scripts_index/agenda.js" defer></script>
+    <link rel="stylesheet" href="/inicial/styles_index/style_index.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--Cabeçalho-->
+    <nav class="navbar navbar-expand-lg cabecalho">
+        <div class="container-fluid">
+           <a class=" navbar-brand" href="#">Thaynara Rodrigues</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Agendamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Feedback/feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre mim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--container-mid-->
+    <div class="container cmid">
+        <!--carrousel-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/inicial/img_index/banner_1.png" class="d-block w-100" alt="Imagem beneficios">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carrouselElements">benefícios!</h5>
+                        <p class="carrouselElements">A prática da extensão e cuidado das sobrancelhas não apenas realça a beleza facial, mas também eleva a autoestima e confiança pessoal, refletindo-se em uma vida mais positiva e confiante</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/inicial/img_index/banner_2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="">Quem sou eu?</h5>
+                        <p class="">Olá! Eu sou Thaynara Rodrigues, especialista em design de sobrancelhas e extensão de cílios. Trabalho para realçar a beleza natural de cada pessoa. Me conheça mais aqui!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Conteudo-->
+        <hr class="my-4">
+        <div class="d-flex justify-content-center align-items-center text-center mt-3">
+            <h1>O que você precisa</h1>
+        </div>
+        <!--Agendamento-->
+        <li class="pt-5 list-inline-item">
+            <div class="serv card" style="width: 18rem;">
+                <img class="card-img-top" src="/inicial/img_index/agenda.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Agenda</h5>
+                    <p class="card-text">
+                        Agende seu horário agora mesmo! Garanta seu atendimento no melhor dia e hora para você. Clique aqui e faça seu agendamento de forma rápida e fácil!</p>
+                    <!-- Botão para acionar modal -->
+                    <a href="" class="btn btn-primary " target="_blank" data-bs-toggle="modal" data-bs-target="#agendaModal"><i class="bi bi-calendar3 "></i> Agende aqui!</a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="agendaModal" tabindex="-1" role="dialog" aria-labelledby="titulo" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="w-100 text-center">
+                                        <h5 class="modal-title" id="titulo">Agenda</h5>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <!--form-->
+                                  <form>
+                                    <div class="form-group">
+                                      <label for="nome">Nome</label>
+                                      <input  class="form-control" id="nome" aria-describedby="nome" placeholder="Seu Nome">
+                                    </div>
+                                    <div>
+                                      <labe for="servico">Qual serviço você deseja?</labe>
+                                      <select id="servico"class="form-control form-control-sm">
+                                        <option></option>
+                                        <option>Sobrancelha</option>
+                                        <option>Extenção de cilios</option>
+                                      </select>
+                                    </div>
+                                    <div>
+                                      <labe for="data">Qual dia e horario você deseja?</labe><br>
+                                      <label for="data">Data:</label>
+                                      <input type="date" id="data" name="data"><br><br>
+                                      <label for="hora">Hora:</label>
+                                      <input type="time" id="hora" name="hora"><br><br>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                      <button type="button" name="send" id="send" class="btn btn-primary">Enviar</button>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!--Feedbacks-->
+        <li class="pt-5 list-inline-item">
+            <div class="serv card" style="width: 18rem;">
+                <img class="card-img-top" src="/inicial/img_index/feedbaks.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Feedback</h5>
+                  <p class="card-text">Confira alguns dos nossos feedbacks aqui e veja por que nossos clientes estão satisfeitos com nossos serviços. Leia mais e descubra o que falam sobre nós!</p>
+                  <a href="/Feedback/feedback.html" class="btn btn-primary " target="_blank"><i class="bi bi-journal-check "></i> Confira aqui!</a>
+                </div>
+              </div>    
+            </li>     
+            <hr class="my-4">
+    </div>
+
+    <!--buscape-->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-col">
+                    <h5>Contato </h5>
+                    <a class="link-secondary link-underline-opacity-0 link-opacity-50-hover"href="https://wa.me/5534996366764?text=Ol%C3%A1+Juninho%21+Preciso+de+uma+ajuda%21" target="_blank"><i class="bi bi-whatsapp"> : +55 (34) 99636-6764</i></a><br>
+                    <a class="link-secondary link-underline-opacity-0 link-opacity-50-hover"href="https://www.instagram.com/juninho_informaticamam/" target="_blank"><i class="bi bi-instagram"> : @juninho_informaticamam</i></a><br>
+                    <a class="link-secondary link-underline-opacity-0 link-opacity-50-hover"href="mailto:email@exemplo.com?subject=Assunto%20do%20E-mail&body=Olá,%20" target="_blank"><i class="bi bi-envelope"> : Juninhocpmjr@hotmail.com</i></a>
+                </div>
+                <div class="col-md-3 footer-col">
+                    <h5>Areá Técnica</h5>
+                    <a class="link-secondary link-underline-opacity-0 link-opacity-50-hover"href="./login.html" target="_blank"><i class="bi bi-lock-fill"> : Entre aqui</i></a><br>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span class="text-muted">© 2024 JuninhoInformática</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+      
+</body>
+</html>

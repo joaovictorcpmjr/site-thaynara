@@ -1,0 +1,43 @@
+body{
+    background-color: #d9d9d9;
+}
+.cabecalho {
+   font-family: 'Playfair Display', serif;
+    background-color: #e9b2f8;
+  }
+  
+.cmid{
+    margin-top: 1rem;
+    border-radius: 15px;
+    background-color: #a6a6a6;
+}
+
+.carrouselElements{
+    color: black;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-size: 100%, 100%;
+}
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" fill%3D"%23000000" viewBox%3D"0 0 16 16"%3E%3Cpath d%3D"M8.354 15.354a.5.5 0 0 1-.708-.708L14.293 8l-6.647-6.646a.5.5 0 0 1 .708-.708l7 7a.5.5 0 0 1 0 .708l-7 7z"/%3E%3C/svg%3E');
+}
+
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" fill%3D"%23000000" viewBox%3D"0 0 16 16"%3E%3Cpath d%3D"M8.354 1.646a.5.5 0 1 1 .708.708L2.707 8l6.355 6.646a.5.5 0 0 1-.708.708l-7-7a.5.5 0 0 1 0-.708l7-7z"/%3E%3C/svg%3E');
+}
+
+.modal-footer{
+  color: #a6a6a6;
+}
+
+footer {
+  background-color: #343a40;
+  color: #DBDBDB;
+  padding: 20px 0;
+}
+
+.footer-col {
+  padding: 0 15px;
+}
