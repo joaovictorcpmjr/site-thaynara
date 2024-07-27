@@ -17,29 +17,33 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <!--Cabeçalho-->
-    <nav class="navbar navbar-expand-lg cabecalho">
+     <!--Cabeçalho-->
+     <nav class="navbar navbar-expand-lg cabecalho">
         <div class="container-fluid">
-            <a class=" navbar-brand" href="/index.html">Thaynara Rodrigues</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <a class=" navbar-brand" href="#">Thaynara Rodrigues</a>
+            <button class="btnc navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="icon">
+                    <svg viewBox="0 0 175 80" width="40" height="40">
+                        <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    </svg>
+                </span>
+                <span class="text">MENU</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/Feedback/feedback.html">Feedback</a>
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#agendaModal">Agendamento</a>
                     </li>
-                </ul>
-                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/Feedback/feedback.html">Sobre Mim</a>
+                        <a class="nav-link" href="/Feedback/feedback.html">Feedback</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!--container-mid-->
     <div class="container cmid flex-grow-1">
         <div class="d-flex justify-content-center align-items-center text-center mt-3">
@@ -68,7 +72,7 @@
         <!--Cadastro feed-->
         <div>
             <h4>Cadastre seu FeedBack</h4>
-            <button>Cadastre aqui!</button>
+            <button class="buttonf">Cadastre aqui!</button>
         </div>
         <hr class="my-4">
     </div>
